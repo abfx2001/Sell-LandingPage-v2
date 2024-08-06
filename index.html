@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <!-- ICONS -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <title>Sell Administradora</title>
+</head>
+<body class="font-[Poppins]">
+  <div
+    class="bg-no-repeat sm:bg-cover bg-contain sm:bg-center bg-top" 
+    style="background-image: url('./img/bgs/bg-1.png');">
+    <div class="h-screen">
+      <nav class="p-5 md:flex md:items-center md:justify-center">
+        <div class="flex justify-around items-center ">
+          <span class="text-2xl font-[Poppins] cursor-pointer">
+            <a href="#">
+              <img class="md:h-24 h-16 inline xxl:pe-20 xl:pe-12" src="./img/Logo-Sell-Adm-Branco.png">
+            </a>
+          </span>
+          <span class="text-3xl text-white cursor-pointer mx-2 md:hidden block">
+            <ion-icon class="h-14 w-14" name="menu" onclick="Menu(this)"></ion-icon>
+          </span>
+        </div>
+        <ul class="
+                md:flex md:items-center 
+                z-[1] md:z-auto md:static 
+                absolute md:bg-transparent bg-[#162C44] w-full left-0 
+                md:w-auto md:py-0 md:mt-0 mt-6 pb-4 md:pl-0 pl-7 
+                md:opacity-100 opacity-0 top-[-400px] 
+                transition-all ease-in duration-500">
+          <li class="text-2xl text-white xl:px-12 lg:px-3 md:px-2">
+            <a href="#">Sobre</a>
+          </li>
+          <li class="text-2xl text-white xl:px-12 lg:px-3 md:px-2">
+            <a href="#">Serviços</a>
+          </li>
+          <li class="text-2xl text-white xl:px-12 lg:px-3 md:px-2">
+            <a href="#">Aplicativo</a>
+          </li>
+          <li class="text-2xl text-white xl:px-12 lg:px-3 md:px-2">
+            <a href="#">Contato</a>
+          </li>
+          <li class="xl:ps-16 lg:ps-5"> 
+            <button class="bg-gray-800 bg-opacity-50 text-white border-2 border-white xl:text-2xl text-lg duration-500 px-10 py-2 hover:bg-white hover:text-black rounded-lg">
+              Sou Cliente
+            </button> 
+          </li>
+        </ul>
+      </nav>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
+  </script>
+</body>
+</html>
