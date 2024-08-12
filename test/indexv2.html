@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <!-- ICONS -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,600,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,0,0" />
+
+  <title>Sell Administradora</title>
+</head>
+<body class="font-[Poppins]">
+  <div class="flex">
+    <div class="w-2/12 flex items-center">
+      <div class="w-full text-right">
+        <button onclick="prev()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="-230 -960 960 960" width="60px" fill="#3999d5"><path d="M400-80 0-480l400-400 61 61.67L122.67-480 461-141.67 400-80Z"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="sliderContainer" class="w-10/12 overflow-hidden">
+      <ul id="slider" class="flex w-full">
+        <li class="w-72 py-5 mx-5">
+          <img class="h-72 w-full object-cover" src="./img/condominios/Boulevard-Parque-Central.png" alt="">
+          <h2 class="font-bold text-lg text-center text-[#14293f]">Boulevard Parque Central</h2>
+          <p class="text-md text-center text-[#14293f]">Condomínio Clube 1032 unidades</p>
+        </li>
+        <li class="w-72 py-5 mx-5">
+          <img class="h-72 w-full object-cover" src="./img/condominios/Condomínio-Podium.png" alt="">
+          <h2 class="font-bold text-lg text-center text-[#14293f]">Boulevard Parque Central</h2>
+          <p class="text-md text-center text-[#14293f]">Condomínio Clube 1032 unidades</p>
+        </li>
+        <li class="w-72 py-5 mx-5">
+          <img class="h-72 w-full object-cover" src="./img/condominios/Condomínio-Videre-Perdizes.png" alt="">
+          <h2 class="font-bold text-lg text-center text-[#14293f]">Boulevard Parque Central</h2>
+          <p class="text-md text-center text-[#14293f]">Condomínio Clube 1032 unidades</p>
+        </li>
+        <li class="w-72 py-5 mx-5">
+          <img class="h-72 w-full object-cover" src="./img/condominios/La-Dolce-Vitta.png" alt="">
+          <h2 class="font-bold text-lg text-center text-[#14293f]">Boulevard Parque Central</h2>
+          <p class="text-md text-center text-[#14293f]">Condomínio Clube 1032 unidades</p>
+        </li>
+        <li class="w-72 py-5 mx-5">
+          <img class="h-72 w-full object-cover" src="./img/condominios/Next-Office.png" alt="">
+          <h2 class="font-bold text-lg text-center text-[#14293f]">Boulevard Parque Central</h2>
+          <p class="text-md text-center text-[#14293f]">Condomínio Clube 1032 unidades</p>
+        </li>
+        <li class="w-72 py-5 mx-5">
+          <img class="h-72 w-full object-cover" src="./img/condominios/Parc-Exclusif-Perdizes.png" alt="">
+          <h2 class="font-bold text-lg text-center text-[#14293f]">Boulevard Parque Central</h2>
+          <p class="text-md text-center text-[#14293f]">Condomínio Clube 1032 unidades</p>
+        </li>
+      </ul>
+    </div>
+    <div class="w-2/12 flex items-center">
+      <div class="w-full">
+        <button onclick="next()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="60px" fill="#3999d5"><path d="m309.67-81.33-61-61.67L587-481.33 248.67-819.67l61-61.66 400 400-400 400Z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
